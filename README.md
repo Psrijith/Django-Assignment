@@ -1,5 +1,9 @@
 # Django-Assignment
 Django Web Application
+
+python manage.py runserver 
+in cmd
+
 #### Objective:
 Your task is to find an open-source Django template that has three views: Student, Tutor, and Admin. Additionally, the template should include a calendar UI where students can select class timings.
 
