@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      /* General styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/002/051/055/non_2x/school-classroom-interior-with-desk-and-board-lesson-university-furniture-table-sofa-and-books-cartoon-free-vector.jpg");
+        background-size:  cover;
+      }
+      @media (max-width: 767px) {
+        body {
+          background-image: url("https://wallpapercave.com/wp/wp6517850.jpg");
+          background-size: cover;
+          background-attachment: fixed;
+        }
+      }
+
+      /* Styling for the blocks */
+      .block {
+        width: 215px;
+        height: 215px;
+        background-color: #fcfcfc;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 5px;
+        text-align: center;
+        line-height: 200px;
+        margin: 0 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        animation: slideIn 0.5s ease-in-out;
+      }
+
+      /* Hover effect */
+      .block:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Animation */
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      /* Add background images to each block */
+      .block:nth-child(1) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MITLLlXJYOYP_yVsGass0ikG6KyifydkxlubHipelWvEM895");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .block:nth-child(2) {
+        background-image: url("https://img.freepik.com/free-vector/teacher-teaching-students-classroom-scene_1308-67531.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .redirect-button {
+            position: absolute;
+            bottom: 20px; 
+            right: 20px;  
+            background-color: #248c85;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="block" onclick="selectRole('student')">Student</div>
+    <div class="block" onclick="selectRole('tutor')">Tutor</div>
+
+ <button class="redirect-button" onclick="redirectToHome()">Go to Home</button>
+
+    <script>
+      // JavaScript function to handle block selection
+      function selectRole(role) {
+        alert("Selected Role: " + role);
+      }
+      function redirectToHome() {
+        window.location.href = '/home';  
+    }
+    </script>
+  </body>
+</html>
