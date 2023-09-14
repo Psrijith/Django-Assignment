@@ -17,3 +17,12 @@ Your task is to find an open-source Django template that has three views: Studen
 2. Implement the three views (Student, Tutor, Admin).
 3. Add a calendar UI in the Student view to allow the selection of class timings.
 4. Test all functionalities to make sure they work as expected.
+
+### Output:
+
+ 
+
+https://github.com/Psrijith/Django-Assignment/assets/118285872/01ef0033-69d7-407c-8628-ef92c8c5dd01
+
+
+
